@@ -1,0 +1,600 @@
+  :root {
+      --color-black: #000000;
+      --color-blue: #5ED2EA;
+      --color-footer: #103F69;
+      --color-gray: #4B4B4B;
+      --color-graylight: #e0e0e0;
+      --color-background: #dfdfdf;
+      --color-white: #FFFFFF;
+      --color-hover: #101b99;
+      --color-navlinks: #ddab06;
+      --color-nav-col: rgba(16, 63, 105, 1);
+      --color-semi-background: rgba(94, 210, 234, 1);
+      --color-hover2: #7ac6f1;
+      --color-icon-col: rgb(43, 179, 206);
+
+
+      --container-width-lg: 80%;
+      --container-width-md: 90%;
+      --container-width-sm: 85%;
+
+      --transition1: 180ms ease all;
+      --transition2: all 400ms ease;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Kanit&family=Montserrat:wght@300;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400&family=Source+Sans+Pro:wght@200;400;600;700&display=swap');
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+  }
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+      overflow-x: hidden; 
+  }
+
+.jumbotron h1 {
+   font-weight: 300;
+   font-family: 'Montserrat',sans-serif;
+}
+
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: bold;
+      margin-bottom: 30px;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  p {
+    color: var(--color-gray);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  a:hover { 
+    text-decoration: none;
+    color: var(--color-white);
+    transition: var(--transition1);
+  }
+
+  .jumbotron h1 {
+    margin-top: 8rem;
+    font-weight: 700;
+    transform: translateY(27%);
+    font-family: 'Montserrat', sans-serif;
+  }
+   
+  .jumbotron p {
+     color:var(--color-white);
+     margin-top: 2rem;
+  }
+
+  .jumbotron {
+      background: linear-gradient(to top,
+            rgba(38, 38, 38, 0.7),
+            rgba(38, 38, 38, 0.6)),url(./images/kadimg2.jpg) center no-repeat;
+      background-size: cover;
+      position: relative;
+      height: 80vh;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+
+  .jumbotron button {
+       margin-top: 1rem;
+       padding: 2rem;
+       padding-left: 4rem;
+       padding-right: 4rem;
+       font-size: 1.8rem;
+       font-weight: 600;
+       background: var(--color-blue);
+  }
+
+  .jumbotron button:hover {
+    background: var(--color-hover2);
+  }
+
+  #about button {
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--color-blue);
+    border: none;
+  }
+
+  #about button:hover {
+    background: var(--color-hover2);
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+
+  .logo {
+      color: var(--color-blue);
+      font-size: 200px;
+  }
+
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+  }
+
+  .navbar {
+      margin-bottom: 0;
+      background-color: #ffffff;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+      font-weight: 500;
+  }
+
+  #myNavbar ul {
+    transform: translateX(20%);
+  }
+
+  .navbar li a,
+  .navbar .navbar-brand {
+      color: #000000 !important;
+  }
+   
+  .navbar li {
+     padding-top: 1rem;
+  }
+
+  .translate {
+     margin-left: 1rem;
+  }
+
+  .navbar img {
+     width: 7rem;
+    transform: translateX(-70%);
+  }
+
+  .navbar-nav li a:hover,
+  .navbar-nav li.active a {
+    transition: var(--transition2);
+      color: #ffffff !important;
+      background-color: #000000 !important;
+  }
+
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+
+    .current {
+        border-bottom: 3px solid var(--color-footer);
+    }
+
+    .current:hover {
+        border-bottom: 0;
+    }
+
+  /****************************** Contact Section *******************************/
+    #about h4 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #about h2 {
+        margin-top: 5rem;
+        color: var(--color-nav-col);
+        font-size: 2.5rem;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #about img {
+        width: 40rem;
+        padding: 2rem;
+        padding-top: 1rem;
+            background: var(--color-graylight);
+            border-radius: 3rem;
+    }
+
+
+  /*services section*/
+    #services {
+        margin-bottom: 15rem;
+    }
+
+    #services h2 {
+        margin-top: 10rem;
+        color: var(--color-nav-col);
+        font-size: 2.5rem;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .section__logo {
+        width: 27rem;
+        padding: 2rem;
+        background: var(--color-graylight);
+        border-radius: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+  
+     #img-mobile {
+        display: none;
+     }
+
+    .classic {
+        transform: translateX(30%);
+    } 
+
+    .logo__head {
+        transform: translateX(75%);
+    }
+
+    .row-2 {
+        margin-top: 12rem;
+        margin-bottom: 10rem;
+    }
+
+
+  /*faq panel*/
+  .about_sec {
+     margin-bottom: 15rem;
+     margin-top: 1rem;
+  }
+   
+   .about_title {
+      margin-top: 10rem;
+      padding-bottom: 0;
+      color: var(--color-nav-col);
+      font-size: 2.5rem;
+      font-weight: bolder;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  .faq-img {
+      width: 30rem;
+      height: 30rem;
+      overflow: hidden;
+      margin-left: 0;
+      margin-top: 2rem;
+  }
+
+
+  #faqs-list {
+      font-weight: 400;
+      font-size: 1rem;
+      font-family: 'Montserrat';
+      display: block;
+      color: var(--color-black);
+      padding-top: 1.5rem;
+  }
+
+  .container__faqs {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      display: block;
+      align-items: center;
+  }
+
+  .collapsible {
+      background-color: transparent;
+      color: var(--color-black);
+      cursor: pointer;
+      padding: 20px;
+      width: 100%;
+      border: 2px solid var(--color-nav-col);
+      text-align: left;
+      outline: none;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  .collapsible:hover {
+      background-color: var(--color-footer);
+      color: var(--color-white);
+  }
+
+  .collapsible:after {
+      content: '\002B';
+      color: var(--color-black);
+      font-weight: bolder;
+      float: right;
+      margin-left: 5px;
+  }
+
+  .active:after {
+      content: "\2212";
+  }
+
+  .content {
+      padding: 0 25px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: var(--color-white);
+  }
+
+  .content p {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--color-black);
+  }
+
+  .panel {
+      margin-top: 0.5rem;
+  }
+    
+
+  .call-left {
+    margin-top: 2rem;
+  }
+
+  .call-left p {
+      font-size: 1.5rem;
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  .call-left h3 {
+      margin-bottom: .7rem;
+      font-size: 2.3rem;
+      font-weight: bolder;
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  .contact__btn {
+      width: 40%;
+      transform: translate(74%, 55%);
+      font-weight: 450;
+      font-size: 1.7rem;
+      font-family: 'Montserrat';
+      background: var(--color-semi-background);
+      color: var(--color-white);
+      border-radius: 3px;
+      border: none;
+      transition: var(--transition);
+      display: block;
+  }
+
+  .contact__btn {
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  .contact__btn:hover {
+      background: var(--color-hover2);
+      color: var(--color-white);
+      cursor: pointer;
+  }
+  
+  #contact p {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #contact input {
+    padding: 3rem;
+  }
+
+  input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #phone {
+    font-weight: bold;
+  }
+
+  /*scrolltoTop Btn*/
+  #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 1rem;
+      right: 25px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: var(--color-icon-col);
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 18px;
+  }
+
+  #myBtn:hover {
+      background-color: #555;
+  }
+
+  /*footer new*/
+  .footer {
+      color: #EFEEEE;
+      background: var(--color-footer)
+  }
+
+  .footer p, a {
+    color: var(--color-white);
+    font-size: 1.4rem;
+  }
+   
+  .footer a:hover {
+     color:var(--color-white);
+  }
+
+  .footer .footer_wrapper {
+      padding: 0.8rem 0;
+  }
+
+ 
+
+  @keyframes slide {
+      0% {
+          opacity: 0;
+          transform: translateY(70%);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translateY(0%);
+      }
+  }
+
+  @-webkit-keyframes slide {
+      0% {
+          opacity: 0;
+          -webkit-transform: translateY(70%);
+      }
+
+      100% {
+          opacity: 1;
+          -webkit-transform: translateY(0%);
+      }
+  }
+
+  @media screen and (max-width: 800px) {
+     body {
+        overflow-x: hidden;
+     }
+
+    /* .container, .container-fluid {
+               width: var(--container-width-sm);
+    } */
+  #myNavbar ul {
+      transform: none;
+  }
+      .col-sm-4 {
+          text-align: center;
+          margin: 25px 0;
+      }
+
+      .btn-lg {
+          width: 100%;
+          margin-bottom: 35px;
+      }
+
+          .navbar img {
+              width: 7rem;
+              transform: none;
+            }
+
+        .holder {
+            padding: 0;
+        }  
+        
+                #about img {
+                 display: none;
+                }
+
+         .section__logo {
+             display: none;
+         }
+
+         #img-mobile {
+            display: inline;
+            width: 27rem;
+                padding: 2rem;
+                background: var(--color-graylight);
+                border-radius: 3rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                margin-left: 2rem;
+         }
+
+                        #services p {
+                            font-size: 1.5rem;
+                            display: inline;
+                            font-family: 'Montserrat', sans-serif;
+                        }
+    
+         .classic {
+             transform: none;
+         }
+
+
+         .logo__head {
+            transform:none;
+        }
+
+                 .call-left p {
+                     font-size: 1.3rem;
+                     display: block;
+                     font-family: 'Montserrat', sans-serif;
+                    }
+        .jumbotron h1 {
+            margin-top: 2.7rem;
+            font-weight: 700;
+            transform: none;
+        }    
+/*         
+        .jumbotron p {
+            
+        }
+
+        .jumbotron button {
+
+        } */
+
+                  .contact__btn {
+                      width: 60%;
+                      transform: translate(34%, 55%);
+                      font-weight: 450;
+                      font-size: 1.7rem;
+                      font-family: 'Montserrat';
+                      background: var(--color-semi-background);
+                      color: var(--color-white);
+                      border-radius: 3px;
+                      border: none;
+                      transition: var(--transition);
+                      display: block;
+                  }
+        
+                  .contact__btn {
+                      padding-top: 1.2rem;
+                      padding-bottom: 1.2rem;
+                      padding-left: 5%;
+                      padding-right: 5%;
+                  }
+  }
+
+  @media screen and (max-width: 480px) {
+      .logo {
+          font-size: 150px;
+      }
+  }
